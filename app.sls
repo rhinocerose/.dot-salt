@@ -10,7 +10,6 @@ install_network_packages:
       - htop
       - i3-gaps
       - imagemagick
-      - kitty
       - make
       - mpv
       - mupdf

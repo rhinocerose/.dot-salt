@@ -1,9 +1,10 @@
 kitty/config:
-  file.managed:
-    - name: {{ grains.homedir }}/.config/kitty/kitty.conf
-    - source: salt://{{ slspath }}/files/kitty.conf
+  file.recurse:
     - user: {{ grains.user }}
     - makedirs: True
+    - clean: True
+    - name: {{ grains.homedir }}/.config/kitty/
+    - source: salt://{{ slspath }}/files/
 
 kitty/install:
   pkg.installed:

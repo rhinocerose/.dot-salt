@@ -4,7 +4,7 @@ terminal/fish/install:
 
 terminal/fish/config:
   file.managed:
-    - name: {{ grains.homedir }}/.config/fish/config.fish
+    - name: {{ grains.homedir }}/config.fish
     - source: salt://{{ slspath }}/files/config.fish
     - user: {{ grains.user }}
 
@@ -18,20 +18,13 @@ terminal/zsh/zinit:
     - user: {{ grains.user }}
     - unless: ls {{ grains.homedir }}/.zinit/bin
 
-terminal/zsh/zinitrc:
-  file.managed:
-    - name: {{ grains.homedir }}/.zsh/zinit.zsh
-    - source: salt://{{ slspath }}/files/zinit.zsh
-    - user: {{ grains.user }}
-
 terminal/zsh/includes:
   file.recurse:
-    - name: {{ grains.homedir }}/.zsh/includes
+    - name: {{ grains.homedir }}/.dotfiles/.config/fish
     - makedirs: True
-    - source: salt://{{ slspath }}/files/includes/
+    - source: salt://{{ slspath }}/files/
     - clean: True
     - user: {{ grains.user }}
-
 
 terminal/zsh/rawkode:
   user.present:
