@@ -2,17 +2,17 @@ vim/install:
   pkg.installed:
     - name: vim
 
-vim/dein/install:
-  cmd.script:
-    - name: https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
-    - args: {{ grains.homedir }}/.dein
-    - runas: {{ grains.user }}
-    - unless: ls {{ grains.homedir }}/.dein
+
+vim/plugins:
+  file.managed:
+    - name: {{ grains.homedir }}/.vim/vim-plug.vim
+    - source: salt://{{ slspath }}/files/vim-plug.vim
+    - makedirs: True
+    - user: {{ grains.user }}
 
 vim/configuration:
   file.managed:
-    - name: {{ grains.homedir }}/.config/vim/vimrc
+    - name: {{ grains.homedir }}/.vim/vimrc
     - source: salt://{{ slspath }}/files/vimrc
-    - template: jinja
     - makedirs: True
     - user: {{ grains.user }}
