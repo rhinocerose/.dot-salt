@@ -1,0 +1,13 @@
+ #include "colors.Xresources"
+
+
+gnome.terminal.font: FiraCode-Regular 8
+
+i3-wm.gaps.inner.size: 10
+i3-wm.gaps.outer.size: 5
+i3-wm.program.launcher.app:	rofi -show drun -theme $rofiTheme
+i3-wm.window.border.size: 1
+i3-wm.floatingwindow.border.size: 1
+i3-wm.gaps.focus_follows_mouse: no
+
+rofi.font: FiraCode-Regular 8

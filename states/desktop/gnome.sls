@@ -1,0 +1,2 @@
+include:
+  - desktop.i3
