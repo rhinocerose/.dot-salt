@@ -2,15 +2,9 @@ install_network_packages:
   pkg.installed:
     - pkgs:
       - bashtop
-      - bat
-      - cmake
       - coreutils
-      - fasd
-      - fish
-      - htop
       - i3-gaps
       - imagemagick
-      - make
       - mpv
       - mupdf
       - neofetch

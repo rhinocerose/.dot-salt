@@ -5,8 +5,11 @@ terminal/tools:
   pkg.installed:
     - names:
       - bat
-      - exa
-      - broot
-      - fd
-      - jq
-      - skim
+      - cmake
+      - htop
+      - make
+      - ripgrep
+      - thefuck
+      - tree
+      - unzip
+      - zip
