@@ -11,6 +11,8 @@ containers/docker/service:
     - name: docker
     - enable: True
     - reload: True
+    - require:
+      - pkg: docker
 
 containers/docker/{{ grains.user }}/group:
   user.present:

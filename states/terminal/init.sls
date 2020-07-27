@@ -12,4 +12,5 @@ terminal/tools:
       - thefuck
       - tree
       - unzip
+      - xclip
       - zip
