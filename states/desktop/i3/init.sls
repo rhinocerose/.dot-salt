@@ -14,3 +14,4 @@
 i3/i3-gaps:
   pkg.installed:
     - i3-gaps
+    - rofi
