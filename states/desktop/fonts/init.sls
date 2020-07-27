@@ -6,6 +6,7 @@ fonts/install:
       - ttf-cascadia-code
       - ttf-google-fonts-typewolf
       - awesome-terminal-fonts
+      - otf-powerline-symbols
       - otf-font-awesome
       - powerline-fonts
       - ttf-font-awesome

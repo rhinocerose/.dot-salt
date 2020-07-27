@@ -1,2 +1,2 @@
 include:
-  - desktop.i3
+  - desktop.gnome-shell
