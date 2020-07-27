@@ -1,13 +1,13 @@
 vim/install:
   pkg.installed:
-    - name: vim
+    - name: {{ salt['pillar.get']('pkgs:vim', 'vim') }}
 
 
 vim/plugins:
   file.managed:
     - makedirs: True
     - user: {{ grains.user }}
-    - names: 
+    - names:
       - {{ grains.homedir }}/.vim/vim-plug.vim
         - source: salt://{{ slspath }}/files/vim-plug.vim
       - {{ grains.homedir }}/.vim/vimrc

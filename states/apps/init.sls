@@ -1,2 +1,2 @@
 include:
-  - apps.*
+  - states.apps.*

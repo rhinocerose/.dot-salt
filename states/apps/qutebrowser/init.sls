@@ -1,9 +1,11 @@
+{% for user, args in pillar['users'].iteritems()%}
 qutebrowser/config:
-  file.managed:
-    - name: {{ grains.homedir }}/.config/qutebrowser/config.py
-    - source: salt://{{ slspath }}/files/config.py
-    - user: {{ grains.user }}
+  file.recurse:
+    - name: {{ args['home'] }}/.config/qutebrowser/
+    - source: salt://{{ slspath }}/files/
+    - user: {{ user }}
     - makedirs: True
+{% endfor %}
 
 qutebrowser/install:
   pkg.installed:

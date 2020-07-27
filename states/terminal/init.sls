@@ -1,5 +1,5 @@
 include:
-  - terminal.fish
+  - states.terminal.fish
 
 terminal/tools:
   pkg.installed:

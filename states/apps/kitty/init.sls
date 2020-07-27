@@ -1,10 +1,12 @@
+{% for user, args in pillar['users'].iteritems() %}
 kitty/config:
   file.recurse:
-    - user: {{ grains.user }}
+    - user: {{ user }}
     - makedirs: True
     - clean: True
-    - name: {{ grains.homedir }}/.config/kitty/
+    - name: {{ args['home'] }}/.config/kitty/
     - source: salt://{{ slspath }}/files/
+{% endfor %}
 
 kitty/install:
   pkg.installed:

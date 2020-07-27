@@ -1,9 +1,6 @@
 base:
   '*':
-    - nettools
-
-B53:
-
-htpc:
-
-xps:
+    - users
+    - states.apps
+    - states.terminal
+    - states.utility
