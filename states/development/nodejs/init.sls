@@ -3,4 +3,3 @@ javascript/install:
   - names:
     - nodejs
     - npm
-    - yarn
