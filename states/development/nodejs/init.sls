@@ -1,5 +1,5 @@
 javascript/install:
-  aur.installed:
+  pkg.installed:
   - names:
     - nodejs
     - npm

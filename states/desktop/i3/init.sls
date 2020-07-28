@@ -1,3 +1,5 @@
+include:
+  - states.desktop.i3.polybar
 # default:
 # 	@cp Xresources $(HOME)/.Xresources
 # 	@mkdir -p $(HOME)/.config/i3
@@ -11,7 +13,8 @@
 
 # 	# Root Stuff
 # 	@sudo cp libinput.conf /etc/X11/xorg.conf.d/50-libinput.conf
-i3/i3-gaps:
+i3-gaps:
   pkg.installed:
-    - i3-gaps
-    - rofi
+    - pkg:
+      - i3-gaps
+      - rofi

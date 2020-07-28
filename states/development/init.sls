@@ -1,6 +1,6 @@
 include:
-  - development.git
-  - development.nodejs
-  - development.python
-  - development.rust
-  - development.zeal
+  - states.development.git
+  - states.development.nodejs
+  - states.development.python
+  - states.development.vim
+  - states.development.zeal
