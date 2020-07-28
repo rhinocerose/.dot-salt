@@ -4,3 +4,4 @@ include:
   - states.utility
   - states.desktop
   - states.development
+  - states.server
