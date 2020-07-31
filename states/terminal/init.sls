@@ -9,6 +9,7 @@ terminal/tools:
       - htop
       - make
       - ripgrep
+      - shfmt
       - thefuck
       - tree
       - unzip

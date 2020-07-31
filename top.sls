@@ -5,7 +5,7 @@ base:
     - states.utility
   B53:
     - states.terminal
-    - states.server
+    - states.server.containers
   xps:
     - states.terminal
   htps:

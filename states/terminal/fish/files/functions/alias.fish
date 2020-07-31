@@ -1,3 +1,11 @@
+function cp
+    cp -r "$argv"
+end
+
+function f
+    find . -name "$argv"
+end
+
 function grep
 	rg -i "$argv"
 end
@@ -80,7 +88,7 @@ function dl
 end
 
 function ds
-    cd $HOME/.dot-salt
+    cd /srv/salt
 end
 
 function dot
@@ -128,7 +136,7 @@ function ssh
 end
 
 function gg
-    git@github.com:"$argv"
+    git clone git@github.com:"$argv"
 end
 
 function gp

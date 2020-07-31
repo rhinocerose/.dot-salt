@@ -3,4 +3,10 @@ include:
   - states.development.nodejs
   - states.development.python
   - states.development.vim
-  - states.development.zeal
+
+development/make_tools:
+  pkg.installed:
+    - names:
+      - cmake
+      - make
+      - shfmt
