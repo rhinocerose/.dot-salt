@@ -1,4 +1,4 @@
-% for user, args in pillar['users'].iteritems() %}
+{% for user, args in pillar['users'].iteritems() %}
 starship/config:
   file.managed:
     - user: {{ user }}

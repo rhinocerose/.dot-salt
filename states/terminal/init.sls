@@ -6,7 +6,9 @@ terminal/tools:
     - names:
       - bat
       - cmake
+      - fd
       - htop
+      - lsd
       - make
       - ripgrep
       - shfmt

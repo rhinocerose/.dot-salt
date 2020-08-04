@@ -7,6 +7,9 @@ include:
 development/make_tools:
   pkg.installed:
     - names:
+      - bison
       - cmake
       - make
+      - meson
+      - ninja
       - shfmt
