@@ -4,6 +4,7 @@ utility/nettools:
       - aria2
       - curl
       - openssh
+      - rclone
       - rsync
       - wget
 
